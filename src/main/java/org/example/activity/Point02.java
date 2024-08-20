@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 public class Point02 {
 
-    static Function<Integer, Double> cube = new Function<Integer, Double>() {
+    public static Function<Integer, Double> cube = new Function<Integer, Double>() {
         @Override
         public Double apply(Integer integer) {
             return Math.pow(integer, 3);
