@@ -11,12 +11,11 @@ interface AgeValidator {
 public class Point06 {
 
     public static void main(String[] args) {
-        // Lambda expression implementing the AgeValidator interface
+
         AgeValidator ageValidator = (name, age, birthDate) -> {
-            // Calculate the age based on the birthdate
+
             int calculatedAge = Period.between(birthDate, LocalDate.now()).getYears();
 
-            // Check if the calculated age matches the provided age
             if (calculatedAge == age) {
                 return "The birth date of " + name + " matches the entered age.";
             } else {

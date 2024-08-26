@@ -18,14 +18,12 @@ public class Point07 {
     }
 
     public static void main(String[] args) {
-        // Create a list of dates
+
         List<LocalDate> dates = Arrays.asList(
                 LocalDate.of(2023, 8, 16),
                 LocalDate.of(2024, 2, 17),
                 LocalDate.of(2022, 11, 12)
         );
-
-        // Use a method reference to print each date
         dates.forEach(DatePrinter::printFormattedDate);
     }
 }
