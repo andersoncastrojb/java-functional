@@ -18,7 +18,7 @@ public class Point09 {
     // Print the filtered names using Optional and Stream
     public static void printFilteredNames(Stream<String> filteredNames) {
         Optional.ofNullable(filteredNames)
-                .orElseGet(Stream::empty) // Use an empty stream if the filtered stream is null
-                .forEach(System.out::println); // Print each element
+                .orElseGet(Stream::empty)
+                .forEach(System.out::println);
     }
 }
